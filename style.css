@@ -48,14 +48,12 @@ h4 {
   font-size: 1.35em;
   font-weight: 400;
 }
-img {
-  width: 100%;
-}
+
 .logo {
  max-width: 50px;
 }
 .portfolio-picture {
- max-width: 100%;
+ max-width: 50%;
 }
 .social-media-icons {
  max-width: max-content;

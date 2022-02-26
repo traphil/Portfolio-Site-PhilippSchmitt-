@@ -11,6 +11,22 @@
   color: #25282D;
 }
 
+header {
+  background-color: #ff44c4;
+  border-bottom: 3px solid #4a4a4a;
+  padding: 10px; /* Adds a 10px inner spacing to all sides */
+  padding: 10px 5px; /* Adds 10px to top & bottom and 5px to left and right */
+  padding: 10px 5px 15px 5px; /* Adds 10px top, 5px right, 15px bottom, 5px left */
+  margin: 10px;
+
+}
+
+/* inside style.css*/
+.hero-section{/* class selector */
+color: #FAEBD7;
+
+}
+
 h1, h2, h3, h4 {
   line-height: 1.4;
 }
@@ -32,9 +48,19 @@ h4 {
   font-size: 1.35em;
   font-weight: 400;
 }
-  img {
-  width: auto;
+img {
+  width: 100%;
 }
+.logo {
+ max-width: 50px;
+}
+.portfolio-picture {
+ max-width: 100%;
+}
+.social-media-icons {
+ max-width: max-content;
+}
+
 a {
   color: #ff7f50;
   text-decoration: none; /* No underlining */

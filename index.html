@@ -9,14 +9,15 @@
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
-<div class="hero-section"></div>
+<div id="hero">
+<div class="container"></div>
 <body>
 <div class="body-section"></div>
   <!-- For the header -->
   <header>
-<div class="header-section"></div>
+<div></div>
     <!-- For the navigation -->
-    <div>
+    <div class="container">
       <picture>
         <source srcset="img/traphil-logo-80px.svg" media="(max-width:50px)">
         <img src="img/traphil-logo.svg" class="logo" alt="Logo">
@@ -36,8 +37,9 @@
   <div>
     <div>
       <main>
-        <div class="main-section"></div>
-        <h1> Hi, my name is Phil!<br>
+        <div id="hero">
+        <div class="container"></div>
+        <h1 class "center"> Hi, my name is Phil!<br>
           <span>Multilingual UX/UI-Designer and marketing professional who loves traveling.</span>
         </h1>
       </main>
@@ -51,9 +53,13 @@
       </p>
     </div>
   </div>
+  <div id="projects">
+  <div class="container">
+    <h2>My projects</h2>
+      <div class="row">
   <div>
     <!-- open row that holds (2) columns for project -->
-    <div>
+    <div class="row">
       <!-- open first column (used for image) -->
       <picture>
         <source srcset="img/Helping Hand/Helping Hand.png" media="(max-width:767px)">
@@ -76,7 +82,7 @@
   </div><!-- end row that holds (2) columns for project -->
   <div>
     <!-- open row that holds (2) columns for project -->
-    <div>
+    <div class="row">
       <!-- open first column (used for image) -->
       <picture>
         <source srcset="img/Fline/Fline.png" media="(max-width:767px)">
@@ -94,12 +100,12 @@
         <!-- open paragraph -->
         Write a line or 2 mentioning skills used (optional).
       </p><!-- end paragraph -->
-      <a href="">Read more about Fline</a><!-- button or link label -->
+      <button><a href="">Read more about Fline</a></button><!-- button or link label -->
     </div><!-- end second column --></br>
   </div><!-- end row that holds (2) columns for project -->
   <div>
     <!-- open row that holds (2) columns for project -->
-    <div>
+    <div class="row">
       <!-- open first column (used for image) -->
       <picture>
         <source srcset="img/Homegrowns/Homegrown.png" media="(max-width:767px)">
@@ -117,12 +123,12 @@
         <!-- open paragraph -->
         Write a line or 2 mentioning skills used (optional).
       </p><!-- end paragraph -->
-      <a href="">Read more about Homegrown</a><!-- button or link label -->
+      <button><a href="">Read more about Homegrown</a></button><!-- button or link label -->
     </div><!-- end second column --></br>
   </div><!-- end row that holds (2) columns for project -->
   <div>
     <!-- open row that holds (2) columns for project -->
-    <div>
+    <div class="row">
       <!-- open first column (used for image) -->
       <picture>
         <source srcset="img/Synthy/Synthy.png" media="(max-width:767px)">
@@ -140,7 +146,7 @@
         <!-- open paragraph -->
         Write a line or 2 mentioning skills used (optional).
       </p><!-- end paragraph -->
-      <a href="">Read more about Synthy</a><!-- button or link label -->
+      <button><a href="">Read more about Synthy</a></button><!-- button or link label -->
     </div><!-- end second column --></br>
   </div><!-- end row that holds (2) columns for project -->
 </body>
@@ -150,7 +156,7 @@
 </p>
 </div>
 <div>
-  <a href="mailto:contact@traphil.com">Send your message here</a>
+  <button><a href="mailto:contact@traphil.com">Send your message here</a></button>
 </div>
 <br>
 <a href="ANOTHER-SOCIAL-LINK">
@@ -176,8 +182,9 @@
 </div>
 <p>Copyright YOUR-NAME 2020</p>
 </div>
+<footer>
 <footer id="contact">
-  <div class="footer-section"></div>
+  <div class="container">
   <picture>
     <source srcset="http://via.placeholder.com/600x400" media="(max-width:767px)">
     <img src="http://viaplaceholder.com/32x32" class="social-media-icons" alt="My Footer">

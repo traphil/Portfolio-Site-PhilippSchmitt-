@@ -1,38 +1,47 @@
-<style>
-  body {
-    background-color: LightGrey;
-  }
-  body {
+<style>body {
+  background-color: LightGrey;
+}
+
+body {
   background-color: #EEF0E1;
   font-family: 'Ubuntu', sans-serif;
-  font-size: 16px; /* Sets the font size to 16px */
-  font-weight: 300; /* Sets the font weight to 300 */
-  line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
+  font-size: 16px;
+  /* Sets the font size to 16px */
+  font-weight: 300;
+  /* Sets the font weight to 300 */
+  line-height: 1.6;
+  /* Sets the line-height to 1.6 * the font-size */
   color: #25282D;
 }
 
 header {
-  background-color: #ff44c4;
+  background-color: #ffe4c4;
+  text-align: center;
   border-bottom: 3px solid #4a4a4a;
-  padding: 10px; /* Adds a 10px inner spacing to all sides */
-  padding: 10px 5px; /* Adds 10px to top & bottom and 5px to left and right */
-  padding: 10px 5px 15px 5px; /* Adds 10px top, 5px right, 15px bottom, 5px left */
+  padding: 10px;
+  /* Adds a 10px inner spacing to all sides */
+  padding: 10px 5px;
+  /* Adds 10px to top & bottom and 5px to left and right */
+  padding: 10px 5px 15px 5px;
+  /* Adds 10px top, 5px right, 15px bottom, 5px left */
   margin: 10px;
-
 }
 
 /* inside style.css*/
-.hero-section{/* class selector */
-color: #FAEBD7;
-
+.hero-section {
+  /* class selector */
+  color: #FAEBD7;
+  background-color: #ffe4c4;
+  padding: 20px 0;
 }
 
 h1, h2, h3, h4 {
   line-height: 1.4;
 }
-h1 {
-  font-size: 2.75em;
-  font-weight: 700;
+
+h1 text-align: center;
+font-size: 2.75em;
+font-weight: 700;
 }
 
 h2 {
@@ -44,65 +53,125 @@ h3 {
   font-size: 1.75em;
   font-weight: 400;
 }
+
 h4 {
   font-size: 1.35em;
   font-weight: 400;
 }
 
 .logo {
- max-width: 50px;
+  max-width: 50px;
 }
+
 .portfolio-picture {
- max-width: 50%;
+  max-width: 50%;
 }
+
 .social-media-icons {
- max-width: max-content;
+  max-width: max-content;
 }
 
 a {
   color: #ff7f50;
-  text-decoration: none; /* No underlining */
+  text-decoration: none;
+  /* No underlining */
 }
-a:visited { /* visited link */
+
+a:visited {
+  /* visited link */
   color: #ff7f50;
 }
+
 a:hover {
   color: #3385ff;
-  text-decoration: underline; /* Underlining when hovering over a link */
+  text-decoration: underline;
+  /* Underlining when hovering over a link */
 }
+
 a:focus {
   color: #cc6540;
   text-decoration: underline;
 }
-a:active { /* selected link */
+
+a:active {
+  /* selected link */
   color: #194c30;
 }
-.button.read-more{
-  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+
+.button.read-more {
+  display: inline-block;
+  /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
   background-color: #ff7f50;
-  color: #ffffff; /* needed to override the default link color */
+  color: #ffffff;
+  /* needed to override the default link color */
   font-weight: 400;
   padding: 10px;
   border-radius: 3px;
-  border-bottom: 2px solid #994c30; /* width of the border, type, color */
+  border-bottom: 2px solid #994c30;
+  /* width of the border, type, color */
   transition: 0.2s opacity;
-} .button.read-more:hover {
-  opacity: 0.8; /* Reduces the opacity of the button to 80% */
+}
+
+.button.read-more:hover {
+  opacity: 0.8;
+  /* Reduces the opacity of the button to 80% */
   text-decoration: none;
 }
+
 .button.contact {
   background-color: transparent;
   color: #ff7f50;
   text-transform: uppercase;
   border: 2px solid #ff7f50;
 }
+
 .button.cv {
   background-color: #FEAA54;
   color: #ff7f50;
   text-transform: uppercase;
   border: 5px solid #ff7f50;
-.button.contact:hover {
-  background-color: #ff7f50;
-  color: #ffffff;
-}
-</style>
+
+  .button.contact:hover {
+    background-color: #ff7f50;
+    color: #ffffff;
+  }
+
+  </style>
+
+  /* Layout styling */
+  .container {
+    padding: 0 15px;
+  }
+
+  .row {
+    margin: 25px 0;
+    /* 25px top and bottom, 0 left and right */
+  }
+
+  .center {
+    text-align: center;
+  }
+
+  .logo {
+    max-width: 250px;
+  }
+
+  nav>ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  nav>ul>li {
+    display: inline-block;
+  }
+
+  nav>ul>li>a:visited {
+    padding: 0 15px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #4a4a4a;
+  }
+
+  main {
+    padding-top: 133px;
+  }

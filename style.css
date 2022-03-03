@@ -167,13 +167,6 @@ nav > ul > li {
   display: inline-block;
 }
 
-nav > ul > li > a:visited {
-  padding: 0 15px;
-  text-transform: uppercase;
-  font-weight: 700;
-  color: #4a4a4a;
-}
-
 main {
   padding-top: 133px;
 }

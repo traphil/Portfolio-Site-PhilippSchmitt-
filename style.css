@@ -1,17 +1,17 @@
-<style>body {
+body {
   background-color: LightGrey;
 }
 
 body {
-  background-color: #EEF0E1;
-  font-family: 'Ubuntu', sans-serif;
+  background-color: #eef0e1;
+  font-family: "Ubuntu", sans-serif;
   font-size: 16px;
   /* Sets the font size to 16px */
   font-weight: 300;
   /* Sets the font weight to 300 */
   line-height: 1.6;
   /* Sets the line-height to 1.6 * the font-size */
-  color: #25282D;
+  color: #25282d;
 }
 
 header {
@@ -30,18 +30,22 @@ header {
 /* inside style.css*/
 .hero-section {
   /* class selector */
-  color: #FAEBD7;
+  color: #faebd7;
   background-color: #ffe4c4;
   padding: 20px 0;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   line-height: 1.4;
 }
 
-h1 text-align: center;
-font-size: 2.75em;
-font-weight: 700;
+h1 {
+  text-align: center;
+  font-size: 2.75em;
+  font-weight: 700;
 }
 
 h2 {
@@ -126,52 +130,50 @@ a:active {
 }
 
 .button.cv {
-  background-color: #FEAA54;
+  background-color: #feaa54;
   color: #ff7f50;
   text-transform: uppercase;
   border: 5px solid #ff7f50;
+}
+.button.contact:hover {
+  background-color: #ff7f50;
+  color: #ffffff;
+}
 
-  .button.contact:hover {
-    background-color: #ff7f50;
-    color: #ffffff;
-  }
+/* Layout styling */
+.container {
+  padding: 0 15px;
+}
 
-  </style>
+.row {
+  margin: 25px 0;
+  /* 25px top and bottom, 0 left and right */
+}
 
-  /* Layout styling */
-  .container {
-    padding: 0 15px;
-  }
+.center {
+  text-align: center;
+}
 
-  .row {
-    margin: 25px 0;
-    /* 25px top and bottom, 0 left and right */
-  }
+.logo {
+  max-width: 250px;
+}
 
-  .center {
-    text-align: center;
-  }
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+}
 
-  .logo {
-    max-width: 250px;
-  }
+nav > ul > li {
+  display: inline-block;
+}
 
-  nav>ul {
-    list-style-type: none;
-    padding: 0;
-  }
+nav > ul > li > a:visited {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #4a4a4a;
+}
 
-  nav>ul>li {
-    display: inline-block;
-  }
-
-  nav>ul>li>a:visited {
-    padding: 0 15px;
-    text-transform: uppercase;
-    font-weight: 700;
-    color: #4a4a4a;
-  }
-
-  main {
-    padding-top: 133px;
-  }
+main {
+  padding-top: 133px;
+}

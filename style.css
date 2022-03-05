@@ -50,7 +50,7 @@ h1 {
 
 h2 {
   text-align: center;
-  padding: 20px
+  padding: 20px;
   font-size: 2.25em;
   font-weight: 700;
 }
@@ -70,8 +70,8 @@ h4 {
 }
 
 .row {
-  display: table
-  clear: both
+  display: table;
+  clear: both;
 }
 
 .column1 {
@@ -175,6 +175,10 @@ a:active {
   padding: 50px 50px;
 }
 
+footer {
+  clear: both;
+}
+
 .center {
   text-align: center;
 }
@@ -185,16 +189,15 @@ a:active {
 
 nav > ul {
   list-style-type: none;
-    padding: 0px;
-    overflow: hidden;
+  padding: 0px;
+  overflow: hidden;
 }
 
 nav > ul > li {
   display: inline-block;
   padding: 20px;
-  float: center
+  float: center;
   text-align: center;
-  hover: active
 }
 
 main {
@@ -204,13 +207,14 @@ main {
 
 nav > ul > li > a {
   display: block;
-  color: #CE6B30;
+  color: #ce6b30;
   padding: 2px 20px;
   text-decoration: none;
   font-size: 120%;
+  transition: all 0.8s ease-in-out;
 }
 
 li a:hover {
-    font-size: 100%;
-    color: #3C782E
+  font-size: 100%;
+  color: #3c782e;
 }

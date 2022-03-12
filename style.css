@@ -108,6 +108,7 @@ h2 {
 h3 {
   font-size: 1.75em;
   font-weight: 400;
+  text-align: center;
 }
 
 h4 {
@@ -176,6 +177,25 @@ a:focus {
 a:active {
   /* selected link */
   color: #194c30;
+}
+
+.button {
+  display: inline-block;
+  background-color: #ffe4c4;
+  color: #ce6b30;
+  font-weight: 400;
+  text-decoration: none;
+  padding: 2px 20px;
+  border-radius: 3px;
+  border-bottom: 2px solid #994c30;
+  transition: 0.2s opacity;
+  font-size: 100%;
+  transition: all 0.8s ease-in-out;
+}
+.button:hover {
+  opacity: 0.7;
+  font-size: 120%;
+  color: #3c782e;
 }
 
 .button.read-more {
@@ -332,3 +352,39 @@ Medium devices (640px and larger)
   clear: both;
   display: table;
 }
+
+@keyframes color-change {
+  0% {fill: #edc655;}
+  50% {fill: #fcffad;}
+  100% {fill: #f76414;}
+}
+
+.sun {
+  animation-duration: 4s;
+  animation-name: color-change;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+@keyframes cloud-move {
+  from {transform: translate(0,50px);}
+  to {transform: translate(200px,50px);}
+}
+
+.cloud-front {
+  animation-duration: 30s;
+  animation-name: cloud-move;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+@keyframes cloud-move-reverse {
+  from {transform: translate(446px,48px);}
+  to {transform: translate(100px, 48px);}
+}
+
+.cloud-back {
+  animation: 34s cloud-move-reverse infinite alternate linear;
+} 

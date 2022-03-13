@@ -190,6 +190,8 @@ a:active {
   border-bottom: 2px solid #994c30;
   transition: 0.2s opacity;
   font-size: 100%;
+  display: flex;
+  justify-content: space-between;
   transition: all 0.8s ease-in-out;
 }
 .button:hover {
@@ -387,4 +389,4 @@ Medium devices (640px and larger)
 
 .cloud-back {
   animation: 34s cloud-move-reverse infinite alternate linear;
-} 
+}

@@ -42,7 +42,7 @@ console.log(personParent.child.name); // Output "Sara" to the console
 
 console.log(personParent["name"]); // The same as personParent.name
 var weWantThisField = "age";
-console.log(personParent[weWantThisField]); // The same as personParent.age
+  console.log(personParent[weWantThisField]); // The same as personParent.age
 
 delete shortObject.name; // Will remove the "name" property
 

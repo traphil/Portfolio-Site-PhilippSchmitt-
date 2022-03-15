@@ -182,7 +182,7 @@ a:active {
 .button {
   display: inline-block;
   background-color: #ffe4c4;
-  color: #ce6b30;
+  color: #7C401D;
   font-weight: 400;
   text-decoration: none;
   padding: 2px 20px;
@@ -197,7 +197,7 @@ a:active {
 .button:hover {
   opacity: 0.7;
   font-size: 120%;
-  color: #3c782e;
+    color: #3c782e;
 }
 
 .button.read-more {

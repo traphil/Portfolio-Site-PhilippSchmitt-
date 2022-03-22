@@ -16,14 +16,8 @@ body {
 
 header {
   background-color: #FFEFD6;
-  text-align: center;
   border-bottom: 3px solid #7C401D;
-  padding: 10px;
-  /* Adds a 10px inner spacing to all sides */
-  padding: 10px 5px;
-  /* Adds 10px to top & bottom and 5px to left and right */
-  padding: 10px 5px 15px 5px;
-  /* Adds 10px top, 5px right, 15px bottom, 5px left */
+  padding: 10px 0 4px;
   margin: 10px;
 }
 
@@ -31,7 +25,7 @@ header {
 .flip-box {
   background-color: transparent;
   align-content: center;
-  width: 200px;
+  max-width: 150px; /because of that change, the logo doesn't flip anymore
   height: 100px;
   border: 0px solid #ffffff;
   perspective: 1000px; /* Remove this if you don't want the 3D effect */
@@ -262,20 +256,13 @@ footer {
 nav > ul {
   list-style-type: none;
   padding: 0px;
+  margin: 0;
   overflow: hidden;
 }
 
-nav > ul > li {
-  display: inline-block;
-  padding: 20px;
-  float: center;
-  text-align: center;
-}
-
 main {
-  padding-top: 99.8px;
-  padding-bottom: 30px;
-}
+  padding-top: 56px;
+  }
 
 nav > ul > li > a {
   display: block;
@@ -284,6 +271,10 @@ nav > ul > li > a {
   text-decoration: none;
   font-size: 120%;
   transition: all 0.8s ease-in-out;
+}
+
+.navtoggle.responsive li  {
+  display: block;
 }
 
 li a:hover {
@@ -295,6 +286,53 @@ li a:hover {
 Medium devices (640px and larger)
 ================================= */
 @media only screen and (min-width: 640px) {
+  header {
+        text-align: unset;
+        padding: 20px 0 13px;
+    }
+
+    nav {
+        width: 100%;
+        float: right;
+        display: inline-block;
+        margin-top: 4px;
+    }
+
+    nav > ul {
+        margin: 1em 0;
+    }
+
+    nav > ul > li {
+        display: inline-block;
+    }
+
+    .navtoggle li:not(:last-child) {
+      display: none;
+    }
+
+    .navtoggle li:not(:last-child) {
+      display: none;
+    }
+
+    .navtoggle li:last-child {
+  display: none;
+}
+
+    .navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
+}
+
+nav > ul {
+  margin: 1em 0;
+}
+
 }
 /* ==============================
 Large devices (1024px or larger)

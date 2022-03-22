@@ -36,6 +36,22 @@ console.log(notNullButAString); // Outputs "null" - not the same as null!
       }
     };
 
+var shortObject = { name: "John", age: 31};
+var emptyObject = {}; // Objects can be empty. You can add properties later
+delete shortObject.name; // Will remove the "name" property
+var shortArray = [1,2,3];
+var mixedArray = [
+  1,
+  "Hello",
+  {},
+  ["nested array"]
+];
+
+var myArray = [1,2];
+myArray.push(3);
+myArray.push("Test");
+console.log(myArray); // Will output: [1,2,3, "Test"]
+
 personParent.name = "Anne"; // Set the name property to "Anne"
 personParent.child.size = 175; // Set new values that weren't set before
 console.log(personParent.child.name); // Output "Sara" to the console
@@ -45,6 +61,34 @@ var weWantThisField = "age";
   console.log(personParent[weWantThisField]); // The same as personParent.age
 
 delete shortObject.name; // Will remove the "name" property
+
+function menuToggle() {
+  var x = document.getElementById('myNavtoggle');
+}
+function menuToggle() {
+  var x = document.getElementById('myNavtoggle');
+  x.className += ' responsive';
+}
+function menuToggle() {
+  var x = document.getElementById('myNavtoggle');
+  if (x.className === 'navtoggle') {
+    x.className += ' responsive';
+  } else {
+    x.className = 'navtoggle';
+  }
+}
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+.navtoggle.responsive li  {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid rgba(255,127,80,0.5);
+}
+
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
+}
 
 
 //this

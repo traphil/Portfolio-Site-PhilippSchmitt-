@@ -15,27 +15,23 @@ body {
 }
 
 header {
-  background-color: #FFEFD6;
-  text-align: center;
-  border-bottom: 3px solid #7C401D;
-  padding: 10px;
-  /* Adds a 10px inner spacing to all sides */
-  padding: 10px 5px;
+  border-bottom: 3px solid #7c401d;
+  margin: 10px;
+  background-color: #ffefd6;
   /* Adds 10px to top & bottom and 5px to left and right */
   padding: 10px 5px 15px 5px;
-  /* Adds 10px top, 5px right, 15px bottom, 5px left */
-  margin: 10px;
 }
 
 /* The flip box container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 .flip-box {
   background-color: transparent;
   align-content: center;
-  width: 200px;
+  max-width: 150px; /* because of that change, the logo doesn't flip anymore */
   height: 100px;
   border: 0px solid #ffffff;
   perspective: 1000px; /* Remove this if you don't want the 3D effect */
   display: inline-block;
+  width: 150px;
 }
 
 /* This container is needed to position the front and back side */
@@ -55,7 +51,8 @@ header {
 }
 
 /* Position the front and back side */
-.flip-box-front, .flip-box-back {
+.flip-box-front,
+.flip-box-back {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -65,14 +62,14 @@ header {
 
 /* Style the front side (fallback if image is missing) */
 .flip-box-front {
-  background-color: #white;
+  background-color: transparent;
   color: black;
 }
 
 /* Style the back side */
 .flip-box-back {
   background-color: none;
-  color: #7C401D;
+  color: #7c401d;
   transform: rotateY(180deg);
 }
 
@@ -182,7 +179,7 @@ a:active {
 .button {
   display: inline-block;
   background-color: #ffe4c4;
-  color: #7C401D;
+  color: #7c401d;
   font-weight: 400;
   text-decoration: none;
   padding: 2px 20px;
@@ -197,7 +194,7 @@ a:active {
 .button:hover {
   opacity: 0.7;
   font-size: 120%;
-    color: #3c782e;
+  color: #3c782e;
 }
 
 .button.read-more {
@@ -262,39 +259,83 @@ footer {
 nav > ul {
   list-style-type: none;
   padding: 0px;
+  margin: 0;
   overflow: hidden;
 }
 
-nav > ul > li {
-  display: inline-block;
-  padding: 20px;
-  float: center;
-  text-align: center;
-}
-
 main {
-  padding-top: 99.8px;
-  padding-bottom: 30px;
+  padding-top: 56px;
 }
 
 nav > ul > li > a {
   display: block;
-  color: #7C401D;
+  color: #7c401d;
   padding: 2px 20px;
   text-decoration: none;
   font-size: 120%;
   transition: all 0.8s ease-in-out;
 }
 
+.navtoggle.responsive li {
+  display: block;
+}
+
 li a:hover {
   font-size: 100%;
-  color: #2A5620;
+  color: #2a5620;
 }
 
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
 @media only screen and (min-width: 640px) {
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+
+  nav {
+    width: 100%;
+    display: inline-block;
+    float: right;
+    margin-top: 4px;
+  }
+
+  nav > ul {
+    margin: 1em 0;
+  }
+
+  nav > ul > li {
+    display: inline-block;
+  }
+
+  .navtoggle li:not(:last-child) {
+    display: none;
+  }
+
+  .navtoggle li:not(:last-child) {
+    display: none;
+  }
+
+  .navtoggle li:last-child {
+    display: none;
+  }
+
+  .navtoggle,
+  .navtoggle.responsive {
+    position: relative;
+  }
+
+  .navtoggle li .icon {
+    position: absolute;
+    right: 0;
+    top: 2px;
+    font-size: 20px;
+  }
+
+  nav > ul {
+    margin: 1em 0;
+  }
 }
 /* ==============================
 Large devices (1024px or larger)
@@ -341,52 +382,67 @@ Medium devices (640px and larger)
   }
 
   .col-md-6 {
-  width: 50%;
-}
+    width: 50%;
+  }
 
-[class*="col-"] {
-  float: left;
-}
+  [class*="col-"] {
+    float: left;
+  }
 
-.row::after {
-  content: "";
-  padding: 10px, 10px
-  clear: both;
-  display: table;
-}
+  .row::after {
+    content: "";
+    padding: 10px 10px;
+    clear: both;
+    display: table;
+  }
 
-@keyframes color-change {
-  0% {fill: #edc655;}
-  50% {fill: #fcffad;}
-  100% {fill: #f76414;}
-}
+  @keyframes color-change {
+    0% {
+      fill: #edc655;
+    }
+    50% {
+      fill: #fcffad;
+    }
+    100% {
+      fill: #f76414;
+    }
+  }
 
-.sun {
-  animation-duration: 4s;
-  animation-name: color-change;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: linear;
-}
+  .sun {
+    animation-duration: 4s;
+    animation-name: color-change;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+  }
 
-@keyframes cloud-move {
-  from {transform: translate(0,50px);}
-  to {transform: translate(200px,50px);}
-}
+  @keyframes cloud-move {
+    from {
+      transform: translate(0, 50px);
+    }
+    to {
+      transform: translate(200px, 50px);
+    }
+  }
 
-.cloud-front {
-  animation-duration: 30s;
-  animation-name: cloud-move;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: linear;
-}
+  .cloud-front {
+    animation-duration: 30s;
+    animation-name: cloud-move;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+  }
 
-@keyframes cloud-move-reverse {
-  from {transform: translate(446px,48px);}
-  to {transform: translate(100px, 48px);}
-}
+  @keyframes cloud-move-reverse {
+    from {
+      transform: translate(446px, 48px);
+    }
+    to {
+      transform: translate(100px, 48px);
+    }
+  }
 
-.cloud-back {
-  animation: 34s cloud-move-reverse infinite alternate linear;
+  .cloud-back {
+    animation: 34s cloud-move-reverse infinite alternate linear;
+  }
 }

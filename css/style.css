@@ -263,6 +263,16 @@ nav > ul {
   overflow: hidden;
 }
 
+nav ul li:not(:last-child) {
+  display: none;
+}
+
+nav ul li:last-child {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+
 main {
   padding-top: 56px;
 }
@@ -305,16 +315,8 @@ Medium devices (640px and larger)
     margin: 1em 0;
   }
 
-  nav > ul > li {
+  .navtoggle li:not(:last-child) {
     display: inline-block;
-  }
-
-  .navtoggle li:not(:last-child) {
-    display: none;
-  }
-
-  .navtoggle li:not(:last-child) {
-    display: none;
   }
 
   .navtoggle li:last-child {

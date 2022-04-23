@@ -2,36 +2,42 @@
 <html lang="en" dir="ltr">
 
 <head>
+  <script src="js/scripts.js"></script>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/png" href="img/favicon.ico.png">
-  <title>traphil.com - my portfolio</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="script.js"></script>
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <title>UX/UI/MarCo Hybrid to consult your business achieving goals</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+  <!--fontawesome icons-->
+  <script src="https://kit.fontawesome.com/c89f8c4219.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
   <!-- For the header -->
   <header>
     <!-- For the navigation -->
-    <div>
-      <picture>
-        <source srcset="img/traphil-logo-80px.svg" media="(max-width:50px)">
-        <img src="img/traphil-logo.svg" alt="Logo">
-      </picture>
-      <nav>
-        <ul>
-          <li><a href="index.html">Hogar de Pagina</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
-          <li><a href="ux-ui.html">UX/UI</a></li>
-          <li><a href="travel.html">Travel</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
+    <div class="flip-box">
+      <div class="flip-box-inner">
+        <div class="flip-box-front">
+          <img src="img/traphil-logo.svg" alt="Traphil logo" style="align:center;width:100px;height:100px">
+        </div>
+        <div class="flip-box-back">
+          <h4>traphil.com</h4>
+        </div>
+      </div>
     </div>
+    <nav id="myNavtoggle" class="navtoggle">
+      <ul>
+        <li><a href="index.html">Hogar de Pagina</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="ux-ui.html">UX/UI</a></li>
+        <li><a href="travel.html">Travel</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+      </ul>
+    </nav>
   </header>
   <div>
     <div>

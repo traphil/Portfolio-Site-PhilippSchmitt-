@@ -2,48 +2,83 @@
 <html lang="en" dir="ltr">
 
 <head>
+  <script src="js/scripts.js"></script>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="icon" type="image/png" href="img/favicon.ico.png">
-  <title>Traphil.com - My travel blog.</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="script.js"></script>
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <title>UX/UI/MarCo Hybrid to consult your business achieving goals</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+  <!--fontawesome icons-->
+  <script src="https://kit.fontawesome.com/c89f8c4219.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-  <!-- For the heade  r -->
+  <!-- For the header -->
   <header>
     <!-- For the navigation -->
-    <div>
-      <picture>
-        <source srcset="img/traphil-logo-80px.svg" media="(max-width:50px)">
-        <img src="img/traphil-logo.svg" alt="Logo">
-      </picture>
-      <nav>
-        <ul>
-          <li><a href="index.html">Hogar de Pagina</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
-          <li><a href="ux-ui.html">UX/UI</a></li>
-          <li><a href="travel.html">Travel</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
+    <div class="flip-box">
+      <div class="flip-box-inner">
+        <div class="flip-box-front">
+          <img src="img/traphil-logo.svg" alt="Traphil logo" style="align:center;width:100px;height:100px">
+        </div>
+        <div class="flip-box-back">
+          <h4>traphil.com</h4>
+        </div>
+      </div>
     </div>
+    <nav id="myNavtoggle" class="navtoggle">
+      <ul>
+        <li><a href="index.html">Homepage</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="ux-ui.html">UX/UI</a></li>
+        <li><a href="travel.html">Travel</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+      </ul>
+    </nav>
   </header>
   <div>
     <div>
       <p>This whole website started as a travel blog and was transformed over the years into a website with a blog<br><br>
         I've spent some valuable years in Latin America and Europe that gave me valuable life experience. Without it, I wouldn't be the same personality I am today.<br><br>
         Not only did I learn to speak multiple languages, I also learned how to adapt fast in vibrant and dynamic environments and new cultures.<br><br>
-        Please find some of the most distinct travel experiences wrapped up as blog articles here.</p>
+        Please find some of the most distinct travel experiences wrapped up as <a href="https://traphil.com/travel/">blog articles here</a></p>
     </div>
 
     <body>
       <!-- page content -->
       <script src="js/scripts.js"></script>
     </body>
+    <footer id="contact">
+      <div class="footer">
+        <div class="row">
+          <picture>
+            <img src="img/traphil favicon 16px.svg" media="(max-width:767px)" class="social-media-icons" alt="My Footer">
+          </picture>
+          <p>Copyright Phil 2022</p>
+        </div>
+        <div>
+          <button><a href="mailto:contact@traphil.com">Send your message here</a></button>
+        </div>
+        <br>
+        <div>
+          <!--Social Media Layout and Placeholders-->
+          <a href="https://www.linkedin.com/in/philipp-schmitt-80955771/" target="_blank">
+            <img src="https://cdn1.iconfinder.com/data/icons/social-media-circle-7/512/Circled_Linkedin_svg-96.png"
+              srcset="https://cdn1.iconfinder.com/data/icons/social-media-circle-7/512/Circled_Linkedin_svg-96.png 2x"
+              alt="Linkedin, network, social network, linkedin logo icon - Free download" class="d-block mx-auto"></a>
+          <a href="https://www.upwork.com/freelancers/~01eb3714871e8f8c1b" target="_blank">
+            <img src="https://cdn2.iconfinder.com/data/icons/picons-social/57/79-upwork-96.png"
+              srcset="https://cdn2.iconfinder.com/data/icons/picons-social/57/79-upwork-96.png 2x"
+              alt="Upwork icon - Free download on Iconfinder" class="d-block mx-auto">
+            <a href="https://www.behance.net/philippschmitt" target="_blank">
+              <img
+                data-cfsrc="https://cdn1.iconfinder.com/data/icons/social-media-circle-7/512/Circled_Behance4_svg-96.png"
+                srcset="https://cdn1.iconfinder.com/data/icons/social-media-circle-7/512/Circled_Behance4_svg-96.png 2x"
+                alt="Behance, portfolio, social network, behance logo icon - Free download" class="d-block mx-auto"
+                src="https://cdn1.iconfinder.com/data/icons/social-media-circle-7/512/Circled_Behance4_svg-96.png">
+        </div>
+    </footer>
 
 </html>

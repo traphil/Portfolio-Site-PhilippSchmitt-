@@ -8,8 +8,6 @@ function menuToggle() {
   }
 }
 
-var Text1 = "He said: \"Yes!\", that's for sure";
-var Text2 = 'He said: "Yes!", that\'s for sure';
 
 var Integer = 456;
 var Integer2 = -345; // This is negative integer

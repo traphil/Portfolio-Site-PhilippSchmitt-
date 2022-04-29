@@ -68,7 +68,7 @@
 
   /* Style the back side */
   .flip-box-back {
-    background-color: none;
+    background: none;
     color: #7c401d;
     transform: rotateY(180deg);
   }
@@ -155,7 +155,6 @@
   a:hover {
       color: #3385ff;
     text-decoration: underline;
-    font-size: auto;
     /* Underlining when hovering over a link */
   }
 
@@ -177,10 +176,8 @@
     text-decoration: none;
     padding: 2px 20px;
     border-radius: 3px;
-    border-bottom: 2px solid #994c30;
-    transition: 0.2s opacity;
+    border-bottom: 2px solid #994c30; 
     font-size: 100%;
-    display: flex;
     justify-content: space-between;
     transition: all 0.8s ease-in-out;
     max-width: 225px;
@@ -220,7 +217,7 @@
 
   .button.cv {
     background-color: #feaa54;
-      color: #ffont;
+      color:#ff7f50;
     text-transform: uppercase;
     border: 5px solid #ff7f50;
   }
@@ -301,7 +298,6 @@
     nav {
       width: 100%;
       display: inline-block;
-      float: right;
       margin-top: 4px;
     }
 
@@ -441,3 +437,4 @@
     .cloud-back {
       animation: 34s cloud-move-reverse infinite alternate linear;
     }
+  }
